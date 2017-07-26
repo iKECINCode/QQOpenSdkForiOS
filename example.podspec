@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "resources/**", "example.xml" 
+   s.resources = "Resources/**", "example.xml" 
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
