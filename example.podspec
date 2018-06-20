@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint cordovaProject.podspec' to ensure this is a
+#  Be sure to run `pod spec lint example.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                     example
                    DESC
 
-  s.homepage     = "http://EXAMPLE/exampleProject"
+  s.homepage     = "http://EXAMPLE/example"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -54,9 +54,9 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "example" => "example@example.com" }
-  # Or just: s.author    = "yangheng"
-  # s.authors            = { "yangheng" => "yangheng_work@live.com" }
-  # s.social_media_url   = "http://twitter.com/yangheng"
+  # Or just: s.author    = "example"
+  # s.authors            = { "example" => "example@example.com" }
+  # s.social_media_url   = "http://twitter.com/example"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -67,6 +67,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios
    s.platform         = :ios, "8.0"
    s.swift_version    = '4.0'
+   s.cocoapods_version = '>= 1.5.0'
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -81,8 +82,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
+  #s.source       = { :git => "http://EXAMPLE/YourPods.git", :tag => "#{s.version}" }
   s.source       = { :path => "./" }
-
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -97,6 +98,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
+  #s.static_framework = true
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
