@@ -96,7 +96,9 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Classes/**/*.{h,m,swift,mm,c,cpp}"
   s.exclude_files = "Classes/Exclude"
 
+  # 如果未设置 public_header_files 默认所有头文件都是public的
   # s.public_header_files = "Classes/**/*.h"
+  # s.private_header_files = "Classes/private/*.h"
 
   #s.static_framework = true
 
