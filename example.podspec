@@ -131,6 +131,9 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "Libs/*.a"
   s.vendored_frameworks = "Libs/*.framework"
 
+  #屏蔽链接的库的警告
+  s.pod_target_xcconfig = {'OTHER_LDFLAGS' => '-w'}
+
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
