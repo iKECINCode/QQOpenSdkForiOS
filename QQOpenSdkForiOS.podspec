@@ -125,7 +125,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  s.libraries      = 'iconv', 'z', 'c++', 'sqlite3'
+  s.libraries      = 'iconv', 'z', 'stdc++', 'sqlite3'
   s.frameworks     = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
 
   s.vendored_libraries = "Libs/*.a"
