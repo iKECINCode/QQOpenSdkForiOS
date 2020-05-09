@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "example"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of example."
+  s.name         = "QQOpenSdkForiOS"
+  s.version      = "3.3.9"
+  s.summary      = "The Official iOS SDK of Tencent Open API."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                     example
                    DESC
 
-  s.homepage     = "http://EXAMPLE/example"
+  s.homepage     = "http://wiki.open.qq.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -65,8 +65,8 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform         = :ios, "8.0"
-   s.swift_version    = '4.0'
+   s.platform         = :ios, "9.0"
+   s.swift_version    = '5.0'
    s.cocoapods_version = '>= 1.5.0'
 
   #  When using multiple platforms
@@ -125,8 +125,8 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries      = 'iconv', 'z', 'c++', 'sqlite3'
+  s.frameworks     = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony'
 
   s.vendored_libraries = "Libs/*.a"
   s.vendored_frameworks = "Libs/*.framework"
